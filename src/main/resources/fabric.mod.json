@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "funvillagers",
+	"version": "${version}",
+	"name": "Fun Villagers",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"T_Haw"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/funvillagers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thaw.funvillagers.FunVillagers"
+		],
+
+		"client": [
+			"net.thaw.funvillagers.FunVillagersClient"
+		],
+		"fabric-datagen": [
+			"net.thaw.funvillagers.FunVillagersDataGenerator"
+		]
+	},
+	"mixins": [
+		"funvillagers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
